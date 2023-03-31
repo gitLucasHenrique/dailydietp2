@@ -1,20 +1,13 @@
+import { HomeHeader } from "@components/HomeHeader";
+import { StatisticsBox } from "@components/StatisticsBox";
 import { SafeAreaView, StyleSheet, Text } from "react-native";
+import { Container } from "./styles";
 
 export function Home(){
     return (
-        <SafeAreaView style={styles.container}>
-            <Text>
-                home
-            </Text>
-        </SafeAreaView>
+        <Container>
+            <HomeHeader />
+            <StatisticsBox />
+        </Container>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#a70d0d',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  });
